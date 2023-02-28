@@ -8,7 +8,7 @@ fn open() -> Lines<BufReader<File>>{
     reader.lines()
 }
 
-fn find_common_item(){
+pub fn find_common_item(){
     let mut total_value: u32 = 0;
     let lines = open();
 
@@ -27,7 +27,7 @@ fn find_common_item(){
     println!("{}", total_value);
 }
 
-fn find_common_item_v2(){
+pub fn find_common_item_v2(){
   let lines: Vec<String> = open().filter_map(|line|line.ok()).collect();
   let mut sum = 0;
   for i in (0..lines.len()).step_by(3){

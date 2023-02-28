@@ -6,7 +6,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     Ok(())
 }
 
-fn day_one() -> io::Result<()> {
+pub fn day_one() -> io::Result<()> {
     let str = fs::read_to_string("../inputs/day_one.txt")?;
     let v_calories = str.split("\r\n");
     let mut best_sum: u32 = 0;
