@@ -5,5 +5,5 @@ use crate::days::day_four::*;
 use crate::utils::open::*;
 
 fn main() {
-    day_four();
+    day_four_part_two();
 }
